@@ -38,6 +38,10 @@ function acstarter_setup() {
   register_nav_menus( array(
     'primary' => esc_html__( 'Primary', 'acstarter' ),
     'sitemap' => esc_html__( 'Sitemap', 'acstarter' ),
+    'about' => esc_html__( 'About', 'acstarter' ),
+    'what' => esc_html__( 'What', 'acstarter' ),
+    'listings' => esc_html__( 'Listings', 'acstarter' ),
+    'news' => esc_html__( 'News', 'acstarter' ),
   ) );
 
   /*
