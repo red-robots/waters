@@ -204,3 +204,141 @@
         }
     }
 }
+.template-staff {
+    padding: 40px 0;
+    @media screen and (min-width: $tabwidth){
+        padding: 5% 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+    >header.row-1 {
+        >.wrapper.cap {
+            margin: 0 0 30px 0;
+            @media screen and (min-width: $tabwidth){
+                margin: 0 0 10% 0;
+            }
+            h1 {
+                margin: 0;
+                color: $color__waters-blue;
+                font-size: 25px;
+                @media screen and (min-width: $tabwidth){
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+    >.row-2 {
+        >.wrapper.cap {
+            margin: 0 0 30px 0;
+            @media screen and (min-width: $tabwidth){
+                margin: 0 0 5% 0;
+            }
+            .copy {
+
+            }
+        }
+    }
+    >.staff.row-3 {
+        >.wrapper.cap {
+            >.member {
+                text-align: center;
+                box-shadow: 0px 0px 10px grey;
+                margin: 20px 0 0 0;
+                padding: 20px 40px 30px 40px;
+                @media screen and (min-width: $tabwidth){
+                    width: 1/2*95%;
+                    margin: 5% 2.5% 0 2.5%;
+                    float: left;
+                    @include flexbox();
+                    @include flexbox-justify(flex-start);
+                    @include flexbox-align-content(center);
+                    @include flexbox-align-items(center);
+                    @include flexbox-direction(column);
+                }
+                @media screen and (min-width: $midwidth){
+                    width: 1/3*90%;
+                }
+                &:nth-child(odd){
+                    @media screen and (min-width: $tabwidth){
+                        margin-left: 0;
+                    }
+                    @media screen and (min-width: $midwidth){
+                        margin-left: 2.5%;
+                    }
+                }
+                &:nth-child(even){
+                    @media screen and (min-width: $tabwidth){
+                        margin-right: 0;
+                    }
+                    @media screen and (min-width: $midwidth){
+                        margin-right: 2.5%;
+                    }
+                }
+                &.first {
+                    @media screen and (min-width: $midwidth){
+                        margin-left: 0;
+                    }
+                }
+                &.last {
+                    @media screen and (min-width: $midwidth){
+                        margin-right: 0;
+                    }
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                    margin: 0 0 15px 0;
+                }
+                header {
+                    width: 100%;
+                    text-align: center;
+                    border-top: 1px solid $color__waters-green;
+                    border-bottom: 1px solid $color__waters-green;
+                    padding: 5px 0 10px 0;
+                    h2 {
+                        color: $color__waters-blue;
+                        margin: 0;
+                        font-size: 20px;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 23px;
+                        }
+                    }
+                    h3 {
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                }
+                .contact {
+                    width: 100%;
+                    text-align: center;
+                    margin: 15px 0 25px 0;
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        margin: 0 5px;
+                        font-size: 20px;
+                    }
+                }
+                a.button {
+                    margin: auto 0 0 0;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $color__waters-green;
+                    border: 1px solid $color__waters-green;
+                    border-radius: 900px;
+                    text-transform: uppercase;
+                    padding: 10px 40px;
+                    text-align: center;
+                    font-size: 18px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 20px;
+                    }
+                    &:hover {
+                        color: white;
+                        background-color: $color__waters-green;
+                    }
+                }
+            }
+        }
+    }
+}

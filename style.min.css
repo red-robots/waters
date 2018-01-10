@@ -1476,6 +1476,33 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-index>.row-3>.wrapper.cap .post a.button{display:inline-block;text-decoration:none;color:#207963;border:1px solid #207963;border-radius:900px;text-transform:uppercase;padding:10px 40px;text-align:center;font-size:18px}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper.cap .post a.button{font-size:20px}
 }.template-index>.row-3>.wrapper.cap .post a.button:hover{color:white;background-color:#207963}
+.template-staff{padding:40px 0}
+@media screen and (min-width:600px){.template-staff{padding:5% 0;width:85%;margin:0 auto}
+}.template-staff>header.row-1>.wrapper.cap{margin:0 0 30px 0}
+@media screen and (min-width:600px){.template-staff>header.row-1>.wrapper.cap{margin:0 0 10% 0}
+}.template-staff>header.row-1>.wrapper.cap h1{margin:0;color:#244a79;font-size:25px}
+@media screen and (min-width:600px){.template-staff>header.row-1>.wrapper.cap h1{font-size:45px}
+}.template-staff>.row-2>.wrapper.cap{margin:0 0 30px 0}
+@media screen and (min-width:600px){.template-staff>.row-2>.wrapper.cap{margin:0 0 5% 0}
+}.template-staff>.staff.row-3>.wrapper.cap>.member{text-align:center;box-shadow:0 0 10px grey;margin:20px 0 0 0;padding:20px 40px 30px 40px}
+@media screen and (min-width:600px){.template-staff>.staff.row-3>.wrapper.cap>.member{width:47.5%;margin:5% 2.5% 0 2.5%;float:left;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:flex-start;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+}@media screen and (min-width:900px){.template-staff>.staff.row-3>.wrapper.cap>.member{width:30%}
+}@media screen and (min-width:600px){.template-staff>.staff.row-3>.wrapper.cap>.member:nth-child(odd){margin-left:0}
+}@media screen and (min-width:900px){.template-staff>.staff.row-3>.wrapper.cap>.member:nth-child(odd){margin-left:2.5%}
+}@media screen and (min-width:600px){.template-staff>.staff.row-3>.wrapper.cap>.member:nth-child(even){margin-right:0}
+}@media screen and (min-width:900px){.template-staff>.staff.row-3>.wrapper.cap>.member:nth-child(even){margin-right:2.5%}
+}@media screen and (min-width:900px){.template-staff>.staff.row-3>.wrapper.cap>.member.first{margin-left:0}
+}@media screen and (min-width:900px){.template-staff>.staff.row-3>.wrapper.cap>.member.last{margin-right:0}
+}.template-staff>.staff.row-3>.wrapper.cap>.member img{width:100%;display:block;margin:0 0 15px 0}
+.template-staff>.staff.row-3>.wrapper.cap>.member header{width:100%;text-align:center;border-top:1px solid #207963;border-bottom:1px solid #207963;padding:5px 0 10px 0}
+.template-staff>.staff.row-3>.wrapper.cap>.member header h2{color:#244a79;margin:0;font-size:20px}
+@media screen and (min-width:600px){.template-staff>.staff.row-3>.wrapper.cap>.member header h2{font-size:23px}
+}.template-staff>.staff.row-3>.wrapper.cap>.member header h3{margin:0;font-size:12px}
+.template-staff>.staff.row-3>.wrapper.cap>.member .contact{width:100%;text-align:center;margin:15px 0 25px 0}
+.template-staff>.staff.row-3>.wrapper.cap>.member .contact a{color:black;text-decoration:none;margin:0 5px;font-size:20px}
+.template-staff>.staff.row-3>.wrapper.cap>.member a.button{margin:auto 0 0 0;display:inline-block;text-decoration:none;color:#207963;border:1px solid #207963;border-radius:900px;text-transform:uppercase;padding:10px 40px;text-align:center;font-size:18px}
+@media screen and (min-width:600px){.template-staff>.staff.row-3>.wrapper.cap>.member a.button{font-size:20px}
+}.template-staff>.staff.row-3>.wrapper.cap>.member a.button:hover{color:white;background-color:#207963}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
