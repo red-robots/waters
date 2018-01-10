@@ -1387,6 +1387,52 @@ html[xmlns] .flexslider .slides{display:block}
 .copy>ul li a,.copy>ol li a{cursor:pointer}
 .copy>ul li a:hover,.copy>ol li a:hover{color:#404040}
 .copy>ul li ul.sub-menu,.copy>ol li ul.sub-menu{margin:0}
+#masthead>.row-1>.wrapper.cap{padding:30px 0 20px 0}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch}
+}#masthead>.row-1>.wrapper.cap .logo{width:80%;margin:0 auto 10px auto}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap .logo{width:25%;margin:0}
+}#masthead>.row-1>.wrapper.cap .logo a{display:block}
+#masthead>.row-1>.wrapper.cap .logo a img{display:block;width:100%}
+#masthead>.row-1>.wrapper.cap #site-navigation{text-align:center}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation{-webkit-box-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}
+}#masthead>.row-1>.wrapper.cap #site-navigation.toggled>div{display:block}
+#masthead>.row-1>.wrapper.cap #site-navigation button{display:inline-block;color:#244a79;border:2px solid #244a79;text-transform:uppercase;font-size:20px;padding:10px;border-radius:900px;text-shadow:none;box-shadow:none;background:transparent}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation button{display:none}
+}#masthead>.row-1>.wrapper.cap #site-navigation button:hover{color:#207963;border:2px solid #207963}
+#masthead>.row-1>.wrapper.cap #site-navigation>div{display:none}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div{display:block}
+}#masthead>.row-1>.wrapper.cap #site-navigation>div ul{margin:0;padding:0}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div ul{text-align:right}
+}#masthead>.row-1>.wrapper.cap #site-navigation>div ul li{margin:20px 0 0 0;list-style-type:none}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div ul li{margin:0 20px;display:inline-block}
+}#masthead>.row-1>.wrapper.cap #site-navigation>div ul li:last-child{margin-right:0}
+#masthead>.row-1>.wrapper.cap #site-navigation>div ul li a{text-decoration:none;color:#244a79;font-size:20px;text-transform:uppercase}
+#masthead>.row-1>.wrapper.cap #site-navigation>div ul li a:hover{color:#207963}
+#masthead>.row-2{background-size:cover;background-position:center;background-repeat:no-repeat;min-height:250px;padding:21% 0;position:relative}
+#masthead>.row-2:before{content:"";top:0;left:0;position:absolute;z-index:2;opacity:.6;width:100%;height:100%;background:#244a79;background:-webkit-linear-gradient(left,#207963,#244a79);background:linear-gradient(to right,#207963,#244a79)}
+#colophon{padding:40px 0;background-color:#244a79;color:white}
+#colophon>.row-1>.wrapper.cap .social{text-align:center}
+#colophon>.row-1>.wrapper.cap .social a{font-size:40px;color:white;margin:0 20px;display:inline-block}
+#colophon>.row-2>.wrapper.cap{padding:20px 0}
+@media screen and (min-width:600px){#colophon>.row-2>.wrapper.cap{padding:5% 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+}#colophon>.row-2>.wrapper.cap>.col-1{text-align:center}
+@media screen and (min-width:600px){#colophon>.row-2>.wrapper.cap>.col-1{text-align:left;width:30%}
+}#colophon>.row-2>.wrapper.cap>.col-1 .telephone{font-size:25px;margin:0 0 10px 0}
+#colophon>.row-2>.wrapper.cap>.col-1 .telephone a{color:white;text-decoration:none}
+#colophon>.row-2>.wrapper.cap>.col-1 .company-name{line-height:1.2}
+#colophon>.row-2>.wrapper.cap>.col-1 .address-line-1{line-height:1.2}
+#colophon>.row-2>.wrapper.cap>.col-1 .address-line-2{line-height:1.2}
+@media screen and (min-width:600px){#colophon>.row-2>.wrapper.cap>.col-2.col{margin-left:auto}
+}#colophon>.row-2>.wrapper.cap .col{margin:20px 0 0 0;text-align:center;position:relative}
+@media screen and (min-width:600px){#colophon>.row-2>.wrapper.cap .col{text-align:left;padding:0 0 0 10px;margin:0;width:14%}
+}@media screen and (min-width:600px){#colophon>.row-2>.wrapper.cap .col:before{content:"";position:absolute;left:0;top:10%;height:90%;border-left:1px solid white}
+}#colophon>.row-2>.wrapper.cap .col header h2{font-size:20px;margin:0;font-weight:500}
+#colophon>.row-2>.wrapper.cap .col ul{margin:0;padding:0}
+#colophon>.row-2>.wrapper.cap .col ul li{list-style-type:none;margin:0;line-height:1.2}
+#colophon>.row-2>.wrapper.cap .col ul li a{line-height:1.2;font-size:12px;color:white;text-decoration:none}
+#colophon>.row-3>.wrapper.cap{padding:20px 0 0 0}
+@media screen and (min-width:600px){#colophon>.row-3>.wrapper.cap{padding:3% 0 0 0}
+}#colophon>.row-3>.wrapper.cap .copy{font-size:14px;color:white;text-align:center}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
