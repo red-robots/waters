@@ -21,9 +21,9 @@
         <div class="row-2">
             <div class="wrapper cap">
                 <div class="wrapper">
-                    <div class="copy">
+                    <section class="copy">
                         <?php the_content();?>
-                    </div><!--.copy-->
+                    </section><!--.copy-->
                 </div><!--.wrapper-->
             </div><!--.wrapper.cap-->
         </div><!--.row-2-->

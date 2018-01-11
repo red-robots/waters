@@ -207,47 +207,53 @@
 aside.top-bar {
     background-color: $color__waters-grey;
     >.wrapper.cap {
-        padding: 20px;
-        text-align: center;
-        ul {
-            margin: 0;
-            padding: 0;
-            li {
-                display: block;
-                @media screen and (min-width: $tabwidth){
-                    display: inline-block;
-                }
-                &:first-child {
-                    a {
-                        padding: 0;
-                        &:before {
-                            display: none;
+        >.wrapper {
+            padding: 20px;
+            text-align: center;
+            @media screen and (min-width: $tabwidth){
+                width: 92%; 
+                margin: 0 auto;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: block;
+                    @media screen and (min-width: $tabwidth){
+                        display: inline-block;
+                    }
+                    &:first-child {
+                        a {
+                            padding: 0;
+                            &:before {
+                                display: none;
+                            }
                         }
                     }
-                }
-                a {
-                    text-decoration: none;
-                    color: $color__waters-green;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    padding: 10px 0 0 0;
-                    @media screen and (min-width: $tabwidth){
-                        font-size: 23px;
-                        padding: 0;
-                    }
-                    &:before {
-                        width: 80px;
-                        border-top: 1px solid $color__waters-green;
-                        margin: 0 auto 10px auto;
-                        content: "";
-                        display: block;
+                    a {
+                        text-decoration: none;
+                        color: $color__waters-green;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        padding: 10px 0 0 0;
                         @media screen and (min-width: $tabwidth){
-                            margin: 0 17px 0 15px;
-                            border-top: none;
-                            content: "|";
-                            width: auto;
-                            display: inline-block;
+                            font-size: 23px;
+                            padding: 0;
+                        }
+                        &:before {
+                            width: 80px;
+                            border-top: 1px solid $color__waters-green;
+                            margin: 0 auto 10px auto;
+                            content: "";
+                            display: block;
+                            @media screen and (min-width: $tabwidth){
+                                margin: 0 17px 0 15px;
+                                border-top: none;
+                                content: "|";
+                                width: auto;
+                                display: inline-block;
+                            }
                         }
                     }
                 }
@@ -463,6 +469,14 @@ aside.top-bar {
     }
 }
 .template-staff {
+    >.row-2 {
+        >.wrapper.cap {
+            margin: 0 auto 10px auto;
+            @media screen and (min-width: $tabwidth){
+                margin: 0 auto 0 auto;
+            }
+        }
+    }
     >.staff.row-3 {
         >.wrapper.cap {
             >.wrapper {
@@ -567,6 +581,99 @@ aside.top-bar {
                             color: white;
                             background-color: $color__waters-green;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+.template-staff-single {
+    >.wrapper.cap {
+        padding: 40px 0;
+        @media screen and (min-width: $tabwidth){
+            padding: 3.5% 0;
+        }
+        >.wrapper {
+            @media screen and (min-width: $tabwidth){
+                width: 92%;
+                margin: 0 auto;
+            }
+            >.row-2 {
+                >.col-1 {
+                    @media screen and (min-width: $tabwidth){
+                        margin: 0;
+                        float: left;
+                        width: 30%;
+                    }
+                    >.member {
+                        text-align: center;
+                        box-shadow: 0px 0px 10px grey;
+                        padding: 20px 40px 30px 40px;
+                        @media screen and (min-width: $tabwidth){
+                            @include flexbox();
+                            @include flexbox-justify(flex-start);
+                            @include flexbox-align-content(center);
+                            @include flexbox-align-items(center);
+                            @include flexbox-direction(column);
+                        }
+                        img {
+                            width: 100%;
+                            display: block;
+                            margin: 0 0 15px 0;
+                        }
+                        header {
+                            width: 100%;
+                            text-align: center;
+                            border-top: 1px solid $color__waters-green;
+                            border-bottom: 1px solid $color__waters-green;
+                            padding: 5px 0 10px 0;
+                            h2 {
+                                color: $color__waters-blue;
+                                margin: 0;
+                                font-size: 20px;
+                                @media screen and (min-width: $tabwidth){
+                                    font-size: 23px;
+                                }
+                            }
+                            h3 {
+                                margin: 0;
+                                font-size: 12px;
+                            }
+                        }
+                        .contact {
+                            width: 100%;
+                            text-align: center;
+                            margin: 15px 0 25px 0;
+                            a {
+                                color: black;
+                                text-decoration: none;
+                                margin: 0 5px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                >.col-2 {
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        margin: 0;
+                        float: left;
+                        width: 70%;
+                        padding: 0 0 0 8%;
+                    }
+                    header {
+                        h1 {
+                            margin: 0;
+                            color: $color__waters-blue;
+                            font-size: 25px;
+                            @media screen and (min-width: $tabwidth){
+                                font-size: 45px;
+                            }
+                        }
+                    }
+                    .copy {
+                        margin: 20px 0 0 0;
+
                     }
                 }
             }

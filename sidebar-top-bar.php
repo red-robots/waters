@@ -22,13 +22,15 @@ if($parent && !empty($parent)):
 	if($query->have_posts()):?>
 		<aside class="top-bar" role="complementary">
 			<div class="wrapper cap">
-				<ul>
-					<?php while($query->have_posts()):$query->the_post();?>
-						<li>
-							<a href="<?php the_permalink();?>"><?php the_title();?></a>
-						</li>
-					<?php endwhile;?>
-				</ul>
+				<div class="wrapper">
+					<ul>
+						<?php while($query->have_posts()):$query->the_post();?>
+							<li>
+								<a href="<?php the_permalink();?>"><?php the_title();?></a>
+							</li>
+						<?php endwhile;?>
+					</ul>
+				</div><!--.wrapper-->
 			</div><!--.wrapper.cap-->
 		</aside><!-- #secondary -->
 		<?php wp_reset_postdata();
