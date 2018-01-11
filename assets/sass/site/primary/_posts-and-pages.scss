@@ -204,10 +204,61 @@
         }
     }
 }
+aside.top-bar {
+    background-color: $color__waters-grey;
+    >.wrapper.cap {
+        padding: 20px;
+        text-align: center;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: block;
+                @media screen and (min-width: $tabwidth){
+                    display: inline-block;
+                }
+                &:first-child {
+                    a {
+                        padding: 0;
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: $color__waters-green;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    padding: 10px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 23px;
+                        padding: 0;
+                    }
+                    &:before {
+                        width: 80px;
+                        border-top: 1px solid $color__waters-green;
+                        margin: 0 auto 10px auto;
+                        content: "";
+                        display: block;
+                        @media screen and (min-width: $tabwidth){
+                            margin: 0 17px 0 15px;
+                            border-top: none;
+                            content: "|";
+                            width: auto;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .template-staff, .template-news {
     padding: 40px 0;
     @media screen and (min-width: $tabwidth){
-        padding: 5% 0;
+        padding: 3.5% 0;
       }
     >header.row-1 {
         >.wrapper.cap {

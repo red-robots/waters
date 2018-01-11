@@ -10,7 +10,7 @@ get_header(); ?>
 
 			<?php
 			if ( have_posts() ) : the_post();
-
+				get_sidebar('top-bar');
 				get_template_part( 'template-parts/content', 'news' );
 
 			endif; // End of the loop.
