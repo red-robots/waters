@@ -180,8 +180,11 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		min-height: 250px;
-		padding: 21% 0;
+		padding: 11% 0;
 		position: relative;
+		&.home {
+			padding: 21% 0;
+		}
 		&:before {
 			content: "";
 			top: 0;
