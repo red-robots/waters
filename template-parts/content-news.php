@@ -63,11 +63,11 @@
                         endif;?>
                     </div><!--.col-1-->
                     <div class="col-2">
-                        <?php $callout_title = get_field("callout_title");
-                        $callout_copy = get_field("callout_copy");
-                        $callout_link = get_field("callout_link");
-                        $callout_link_text = get_field("callout_link_text");
-                        $archives_title = get_field("archives_title");
+                        <?php $callout_title = get_field("callout_title","option");
+                        $callout_copy = get_field("callout_copy","option");
+                        $callout_link = get_field("callout_link","option");
+                        $callout_link_text = get_field("callout_link_text","option");
+                        $archives_title = get_field("archives_title","option");
                         if($callout_title):?>
                             <header>
                                 <h2><?php echo $callout_title;?></h2>
