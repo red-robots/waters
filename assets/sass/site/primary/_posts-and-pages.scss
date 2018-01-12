@@ -1,8 +1,8 @@
 .template-index {
     >.row-1 {
         position: relative;
+        background-color: $color__waters-grey;
         >.wrapper.cap {
-            background-color: $color__waters-grey;
             text-align: center;
             padding: 20px 0 70px 0;
             @media screen and (min-width: $tabwidth){
@@ -261,14 +261,14 @@ aside.top-bar {
         }
     }
 }
-.template-staff, .template-news {
+.template-staff, .template-news, .template-page, .template-sitemap, .error-404 {
     padding: 40px 0;
     @media screen and (min-width: $tabwidth){
         padding: 3.5% 0;
       }
     >header.row-1 {
         >.wrapper.cap {
-            margin: 0 auto 30px auto;
+            margin: 0 auto 20px auto;
             @media screen and (min-width: $tabwidth){
                 margin: 0 auto 5% auto;   
             }
@@ -299,8 +299,34 @@ aside.top-bar {
                     width: 92%; 
                     margin: 0 auto;
                 }
-                .copy {
-
+            }
+        }
+    }
+}
+.template-page, .template-sitemap, .error-404 {
+    >.row-2 {
+        >.wrapper.cap {
+            >.wrapper {
+                @media screen and (min-width: $tabwidth){
+                    width: 92%;
+                    margin: 0 auto;
+                }
+                >.col-1 {
+                    min-height: 1px;
+                    @media screen and (min-width: $tabwidth){
+                        width: 70%;
+                        float: left;
+                        padding: 0 8% 0 0;
+                    }
+                }
+                >aside.col-2.sidebar {
+                    min-height: 1px;
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        width: 30%;
+                        margin: 0;
+                        float: left;
+                    }
                 }
             }
         }
@@ -315,6 +341,7 @@ aside.top-bar {
                     margin: 0 auto;
                 }
                 >.col-1 {
+                    min-height: 1px;
                     @media screen and (min-width: $tabwidth){
                         width: 70%;
                         float: left;
@@ -380,88 +407,13 @@ aside.top-bar {
                         }
                     }
                 }
-                >.col-2 {
+                >aside.col-2.sidebar {
+                    min-height: 1px;
                     margin: 20px 0 0 0;
                     @media screen and (min-width: $tabwidth){
                         width: 30%;
                         margin: 0;
                         float: left;
-                    }
-                    header {
-                        margin: 30px 0 0 0;
-                        @media screen and (min-width: $tabwidth){
-                            margin: 22% 0 0 0;
-                        }
-                        &:first-child {
-                            margin: 0;
-                        }
-                        h2 {
-                            margin: 0;
-                            text-transform: uppercase;
-                            color: $color__waters-blue;
-                            font-size: 20px;
-                            padding: 0 0 5px 0;
-                            @media screen and (min-width: $tabwidth){
-                                font-size: 23px;
-                            }
-                        }
-                    }
-                    .copy {
-                        font-size: 18px;
-                        font-family: $font__serif;
-                        @media screen and (min-width: $tabwidth){
-                            font-size: 20px;
-                        }
-                    }
-                    >.wrapper {
-                        text-align: center;
-                        margin: 20px 0 0 0;
-                        @media screen and (min-width: $tabwidth){
-                            margin: 30px 0 0 0;
-                        }
-                        a.button {
-                            margin: auto 0 0 0;
-                            display: inline-block;
-                            text-decoration: none;
-                            color: white;
-                            border: 1px solid $color__waters-green;
-                            border-radius: 900px;
-                            text-transform: uppercase;
-                            padding: 10px 40px;
-                            text-align: center;
-                            font-size: 18px;
-                            background-color: $color__waters-green;
-                            @media screen and (min-width: $tabwidth){
-                                font-size: 20px;
-                            }
-                            &:hover {
-                                color: $color__waters-green;
-                                background-color: transparent;
-                            }
-                        }
-                    }
-                    ul {
-                        margin: 10px 0 0 0;
-                        padding: 0;
-                        li {
-                            margin: 0;
-                            padding: 0;
-                            list-style-type: none;
-                            font-size: 20px;
-                            font-family: $font__serif;
-                            @media screen and (min-width: $tabwidth){
-                                font-size: 25px;
-                            }
-                            a {
-                                font-family: $font__serif;
-                                font-size: 20px;
-                                text-decoration: none;
-                                color: $color__text-main;
-                                @media screen and (min-width: $tabwidth){
-                                    font-size: 25px;
-                                }
-                            }
-                        }
                     }
                 }
             }
