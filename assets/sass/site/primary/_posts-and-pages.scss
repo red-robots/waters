@@ -261,7 +261,7 @@ aside.top-bar {
         }
     }
 }
-.template-staff, .template-news, .template-page, .template-sitemap, .error-404 {
+.template-staff, .template-news, .template-page, .template-sitemap, .error-404, .template-single-news {
     padding: 40px 0;
     @media screen and (min-width: $tabwidth){
         padding: 3.5% 0;
@@ -303,7 +303,7 @@ aside.top-bar {
         }
     }
 }
-.template-page, .template-sitemap, .error-404 {
+.template-page, .template-sitemap, .error-404, .template-single-news {
     >.row-2 {
         >.wrapper.cap {
             >.wrapper {
