@@ -153,14 +153,14 @@ function build_taxonomies() {
 			'rewrite' => array( 'slug' => 'project-type' ),
 			'_builtin' => true
 		) );
-	register_taxonomy( 'listing_state', 'listing',
+	register_taxonomy( 'listing_type', 'listing',
 		array(
 			'hierarchical' => true, // true = acts like categories false = acts like tags
-			'label' => 'Listings State',
+			'label' => 'Listings Type',
 			'query_var' => true,
 			'show_admin_column' => true,
 			'public' => true,
-			'rewrite' => array( 'slug' => 'listing-state' ),
+			'rewrite' => array( 'slug' => 'listing-type' ),
 			'_builtin' => true
 		) );
 } // End build taxonomies
