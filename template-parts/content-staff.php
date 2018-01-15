@@ -47,6 +47,8 @@
                             $title = get_field("title");
                             $linkedin = get_field("linkedin");
                             $email = get_field("email");
+                            $phone = get_field("phone_number");
+                            $fax = get_field("fax_number");
                             if($image):?>
                                 <img src="<?php echo $image['sizes']['medium'];?>" alt="<?php echo $image['alt'];?>">
                             <?php endif;?>
@@ -63,6 +65,12 @@
                                     <?php endif;?>
                                     <?php if($email):?>
                                         <a href="mailto:<?php echo $email;?>"><i class="fa fa-envelope"></i></a>
+                                    <?php endif;?>
+                                    <?php if($phone):?>
+                                        <a href="<?php echo $phone;?>"><i class="fa fa-phone"></i></a>
+                                    <?php endif;?>
+                                    <?php if($fax):?>
+                                        <a href="<?php echo $fax;?>"><i class="fa fa-fax"></i></a>
                                     <?php endif;?>
                                 </div><!--.contact-->
                             <?php endif;?>

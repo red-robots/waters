@@ -163,12 +163,14 @@ add_action( 'admin_menu', 'change_post_menu_label' );
 ---------------------------------------*/
 
 function ac_first_and_last_menu_class($items) {
-  foreach($items as $k => $v){
-    $parent[$v->menu_item_parent][] = $v;
-  }
-  foreach($parent as $k => $v){
-    $v[0]->classes[] = 'first';
-    $v[count($v)-1]->classes[] = 'last';
+  if($items){
+    foreach($items as $k => $v){
+      $parent[$v->menu_item_parent][] = $v;
+    }
+    foreach($parent as $k => $v){
+      $v[0]->classes[] = 'first';
+      $v[count($v)-1]->classes[] = 'last';
+    }
   }
   return $items;
 }

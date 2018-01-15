@@ -58,29 +58,19 @@
 	h3 {
 	  font-size: 20px;
 	}
-	>ul, >ol {
+	ul, ol {
 	  padding: 0;
-	  margin: 0 0 20px 20px;
+	  margin: 0 0 20px 30px;
 	  font-size: inherit;
 	  li {
 			margin: 0;
 			font-size: inherit;
 			padding: 0;
-			list-style-type: none;
-			text-indent: -14px;
-			&:before {
-				content: "\25A0";
-				color: $color__text-main;
-				margin-right: 5px;
-			}
+			list-style-type: disc;
 			a {
-				cursor: pointer;
 				&:hover {
 				color: $color__text-main;
 				}
-			}
-			ul.sub-menu {
-				margin: 0;
 			}
 	  }
 	}
@@ -144,15 +134,16 @@
 					@media screen and (min-width: $tabwidth){
 						display: block;
 					}
-					ul {
+					>ul {
 						margin: 0;
 						padding: 0;
 						@media screen and (min-width: $tabwidth){
 							text-align: right;
 						}
-						li {
+						>li {
 							margin: 20px 0 0 0;
 							list-style-type: none;
+							position: relative;
 							@media screen and (min-width: $tabwidth){
 								margin: 0 20px;
 								display: inline-block;
@@ -160,13 +151,49 @@
 							&:last-child {
 								margin-right: 0;
 							}
-							a {
+							&:hover {
+								>ul.sub-menu {
+									display: block;
+								}
+							}
+							>a {
 								text-decoration: none;
 								color: $color__waters-blue;
 								font-size: 20px;
 								text-transform: uppercase;
 								&:hover {
 									color: $color__waters-green;
+								}
+							}
+							>ul.sub-menu {
+								margin: 0;
+								padding: 0;
+								@media screen and (min-width: $tabwidth){
+									position: absolute;
+									top: 100%;
+									left: 50%;
+									width: 200px;
+									text-align: left;
+									background-color: white;
+									z-index: 3;
+									display: none;
+									padding: 10px;
+									border: 1px solid $color__waters-blue;
+									@include translatexy(-50%,0);
+								}
+								>li {
+									margin: 10px 0 0 0;
+									list-style-type: none;
+									&:first-child {	
+										@media screen and (min-width: $tabwidth){
+											margin-top: 0;
+										}
+									}	
+									>a {
+										font-size: 18px;
+										text-decoration: none;
+										color: $color__waters-blue;
+									}
 								}
 							}
 						}
