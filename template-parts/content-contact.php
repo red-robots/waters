@@ -1,0 +1,35 @@
+<?php
+/**
+ * Template part for displaying page content in page-contact.php.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package ACStarter
+ */
+
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class("template-contact"); ?>>
+    <header class="row-1">
+        <div class="wrapper cap">
+            <div class="wrapper">
+                <h1><?php the_title();?></h1>
+            </div><!--.wrapper-->
+        </div><!--.wrapper.cap-->
+    </header>
+    <section class="row-2">
+        <div class="wrapper cap">
+            <div class="wrapper clear-bottom">
+                <div class="col-1 copy">
+                    <?php the_content();?>
+                </div><!--.col-1-->
+                <aside class="col-2 sidebar" role="complementary">
+                    <?php $map = get_field("map");
+                    if($map):
+                        echo $map;
+                    endif;?>
+                </aside><!-- .col-2.sidebar -->
+            </div><!--.wrapper-->
+        </div><!--.wrapper.cap-->
+    </section><!--.row-2-->
+</article><!-- #post-## -->
