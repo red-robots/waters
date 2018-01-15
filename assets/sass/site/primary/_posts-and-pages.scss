@@ -261,7 +261,8 @@ aside.top-bar {
         }
     }
 }
-.template-staff, .template-news, .template-page, .template-sitemap, .error-404, .template-single-news, .template-contact {
+.template-staff, .template-news, .template-page, .template-sitemap, .error-404,
+.template-single-news, .template-contact, .template-listings {
     padding: 40px 0;
     @media screen and (min-width: $tabwidth){
         padding: 3.5% 0;
@@ -322,6 +323,67 @@ aside.top-bar {
                         width: 30%;
                         margin: 0;
                         float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+.template-listings {
+    >.row-2 {
+        >.wrapper.cap {
+            >.wrapper {
+                >.header {
+                    padding: 10px;
+                    background-color: lightgrey;
+                    border-bottom: 1px solid $color__text-main;
+                    &.blue {
+                        color: white;
+                        border-bottom: none;
+                        background-color: $color__waters-blue;
+                    }
+                    >.col-1 {
+                        @media screen and (min-width: $tabwidth){
+                            width: 50%;
+                            margin: 0;
+                            float: left;
+                        }
+                    } 
+                    >.col-2 {
+                        margin: 10px 0 0 0;
+                        display: none;
+                        @media screen and (min-width: $tabwidth){
+                            width: 50%;
+                            display: block;
+                            margin: 0;
+                            float: left;
+                        }
+                    } 
+                }
+                >.listings {
+                    >.row {
+                        border-bottom: 1px solid $color__text-main;
+                        padding: 10px;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        >.col-1 {
+                            @media screen and (min-width: $tabwidth){
+                                width: 50%;
+                                margin: 0;
+                                float: left;
+                                padding: 0 5px 0 0;
+                            }
+                        } 
+                        >.col-2 {
+                            margin: 10px 0 0 0;
+                            @media screen and (min-width: $tabwidth){
+                                width: 50%;
+                                margin: 0;
+                                float: left;
+                                padding: 0 0 0 5px;
+                            }
+                        } 
                     }
                 }
             }
