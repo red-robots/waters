@@ -99,6 +99,37 @@ function js_custom_init()
 	
   ); 
   register_post_type('project',$args); // name used in query
+
+  $labels = array(
+	'name' => _x('Listings', 'post type general name'),
+    'singular_name' => _x('Listing', 'post type singular name'),
+    'add_new' => _x('Add New', 'Listing'),
+    'add_new_item' => __('Add New Listing'),
+    'edit_item' => __('Edit Listing'),
+    'new_item' => __('New Listing'),
+    'view_item' => __('View Listing'),
+    'search_items' => __('Search Listings'),
+    'not_found' =>  __('No Listings found'),
+    'not_found_in_trash' => __('No Listings found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Listings'
+  );
+  $args = array(
+	'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
+    'menu_position' => 20,
+    'supports' => array('title','editor','custom-fields','thumbnail'),
+	
+  ); 
+  register_post_type('listing',$args); // name used in query
   
   // Add more between here
   
@@ -120,6 +151,16 @@ function build_taxonomies() {
 			'show_admin_column' => true,
 			'public' => true,
 			'rewrite' => array( 'slug' => 'project-type' ),
+			'_builtin' => true
+		) );
+	register_taxonomy( 'listing_state', 'listing',
+		array(
+			'hierarchical' => true, // true = acts like categories false = acts like tags
+			'label' => 'Listings State',
+			'query_var' => true,
+			'show_admin_column' => true,
+			'public' => true,
+			'rewrite' => array( 'slug' => 'listing-state' ),
 			'_builtin' => true
 		) );
 } // End build taxonomies
