@@ -422,4 +422,125 @@ aside.col-2.sidebar {
 			}
 		}
 	}
+	.affiliations {
+		.affiliation {
+			width: 50%;
+			float: left;
+			padding: 5px;
+			&:nth-child(even){
+				padding-right: 0;
+			}
+			&:nth-child(odd){
+				padding-left: 0;
+			}
+			a {
+				display: block;
+				img {
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+	}
+}
+aside.top-bar {
+    background-color: $color__waters-grey;
+    >.wrapper.cap {
+        >.wrapper {
+            padding: 20px;
+            text-align: center;
+            @media screen and (min-width: $tabwidth){
+                width: 92%; 
+                margin: 0 auto;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: block;
+                    @media screen and (min-width: $tabwidth){
+                        display: inline-block;
+                    }
+                    &:first-child {
+                        a {
+                            padding: 0;
+                            &:before {
+                                display: none;
+                            }
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $color__waters-green;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        padding: 10px 0 0 0;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 23px;
+                            padding: 0;
+                        }
+                        &:before {
+                            width: 80px;
+                            border-top: 1px solid $color__waters-green;
+                            margin: 0 auto 10px auto;
+                            content: "";
+                            display: block;
+                            @media screen and (min-width: $tabwidth){
+                                margin: 0 17px 0 15px;
+                                border-top: none;
+                                content: "|";
+                                width: auto;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.colorbox-popup {
+	background-color: white;
+	padding: 20px;
+	>.col-1 {
+		@media screen and (min-width: $tabwidth){
+			float: left;
+			width: 40%;
+			box-sizing: border-box;
+		}
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	>.col-2 {
+		margin: 20px 0 0 0;
+		@media screen and (min-width: $tabwidth){
+			float: left;
+			box-sizing: border-box;
+			width: 60%;
+			margin: 0;
+			padding: 0 0 0 5%;
+		}
+		header {
+			margin: 0 0 20px 0;
+			h2 {
+				margin: 0;
+			}
+			.location {
+
+			}
+		}
+		.date {
+
+		}
+		.value {
+
+		}
+		.copy {
+			margin: 20px 0 0 0;
+
+		}
+	}
 }

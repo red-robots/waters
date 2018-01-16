@@ -40,17 +40,19 @@ jQuery(document).ready(function ($) {
 		animation: "slide",
 	}); // end register flexslider
 	
-	/*
-	*
-	*	Colorbox
-	*
-	------------------------------------*/
-	$('a.gallery').colorbox({
-		rel:'gal',
-		width: '80%', 
-		height: '80%'
+
+	$('a.popup').colorbox({
+		rel: 'gal',
+		inline: true,
+		width: '90%',
+		maxWidth: '960px',
 	});
-	
+    $(window).on('resize', function () {
+        var width = window.innerWidth * 0.9 > 960 ? '960px' : '90%';
+        $.colorbox.resize({
+            width: width,
+        });
+	});
 	/*
 	*
 	*	Isotope with Images Loaded
@@ -65,28 +67,6 @@ jQuery(document).ready(function ($) {
 			}
  		 });
 	});
-
-	/*
-	*
-	*	Smooth Scroll to Anchor
-	*
-	------------------------------------*/
-	 $('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-	    }, 500);
-	    return false;
-	});
-
-	/*
-	*
-	*	Nice Page Scroll
-	*
-	------------------------------------*/
-	$(function(){	
-		$("html").niceScroll();
-	});
-	
 	
 	/*
 	*

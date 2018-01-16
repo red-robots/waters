@@ -7,26 +7,23 @@
  */ ?>
 
 <aside class="col-2 sidebar">
-	<?php $callout_title = get_field("callout_title","option");
-	$callout_copy = get_field("callout_copy","option");
-	$callout_link = get_field("callout_link","option");
-	$callout_link_text = get_field("callout_link_text","option");
+	<?php $terms = get_terms(array('taxonomy'=>'category','hide_empty'=>true));
+	if(!is_wp_error($terms)&&is_array($terms)&&!empty($terms)):
+		$categories_title = get_field("categories_title","option");
+		if($categories_title):?>
+			<header>
+				<h2><?php echo $categories_title;?></h2>
+			</header>
+		<?php endif;?>
+		<ul>
+			<?php foreach($terms as $term):?>
+				<li>
+					<a href="<?php echo get_term_link($term);?>"><?php echo $term->name;?></a>
+				</li>
+			<?php endforeach;?>
+		</ul>
+	<?php endif;
 	$archives_title = get_field("archives_title","option");
-	if($callout_title):?>
-		<header>
-			<h2><?php echo $callout_title;?></h2>
-		</header>
-	<?php endif;
-	if($callout_copy):?>
-		<div class="copy">
-			<?php echo $callout_copy;?>
-		</div><!--.copy-->
-	<?php endif;?>
-	<?php if($callout_link&&$callout_link_text):?>
-		<div class="wrapper">
-			<a class="button" href="<?php echo $callout_link;?>"><?php echo $callout_link_text;?></a>
-		</div><!--.wrapper-->
-	<?php endif;
 	if($archives_title):?>
 		<header>
 			<h2><?php echo $archives_title;?></h2>

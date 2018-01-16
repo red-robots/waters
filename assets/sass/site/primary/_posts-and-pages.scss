@@ -204,65 +204,9 @@
         }
     }
 }
-aside.top-bar {
-    background-color: $color__waters-grey;
-    >.wrapper.cap {
-        >.wrapper {
-            padding: 20px;
-            text-align: center;
-            @media screen and (min-width: $tabwidth){
-                width: 92%; 
-                margin: 0 auto;
-            }
-            ul {
-                margin: 0;
-                padding: 0;
-                li {
-                    display: block;
-                    @media screen and (min-width: $tabwidth){
-                        display: inline-block;
-                    }
-                    &:first-child {
-                        a {
-                            padding: 0;
-                            &:before {
-                                display: none;
-                            }
-                        }
-                    }
-                    a {
-                        text-decoration: none;
-                        color: $color__waters-green;
-                        font-size: 20px;
-                        text-transform: uppercase;
-                        font-weight: 700;
-                        padding: 10px 0 0 0;
-                        @media screen and (min-width: $tabwidth){
-                            font-size: 23px;
-                            padding: 0;
-                        }
-                        &:before {
-                            width: 80px;
-                            border-top: 1px solid $color__waters-green;
-                            margin: 0 auto 10px auto;
-                            content: "";
-                            display: block;
-                            @media screen and (min-width: $tabwidth){
-                                margin: 0 17px 0 15px;
-                                border-top: none;
-                                content: "|";
-                                width: auto;
-                                display: inline-block;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 .template-staff, .template-news, .template-page, .template-sitemap, .error-404,
-.template-single-news, .template-contact, .template-listings {
+.template-single-news, .template-contact, .template-listings, .template-history,
+.template-brokerage, .template-acquisitions {
     padding: 40px 0;
     @media screen and (min-width: $tabwidth){
         padding: 3.5% 0;
@@ -271,7 +215,7 @@ aside.top-bar {
         >.wrapper.cap {
             margin: 0 auto 20px auto;
             @media screen and (min-width: $tabwidth){
-                margin: 0 auto 5% auto;   
+                margin: 0 auto 2% auto;   
             }
             >.wrapper {
                 @media screen and (min-width: $tabwidth){
@@ -291,10 +235,6 @@ aside.top-bar {
     }
     >.row-2 {
         >.wrapper.cap {
-            margin: 0 auto 30px auto;
-            @media screen and (min-width: $tabwidth){
-                margin: 0 auto 5% auto;
-            }
             >.wrapper {
                 @media screen and (min-width: $tabwidth){
                     width: 92%; 
@@ -304,7 +244,7 @@ aside.top-bar {
         }
     }
 }
-.template-page, .template-sitemap, .error-404, .template-single-news {
+.template-page, .template-sitemap, .error-404, .template-single-news, .template-history, .template-brokerage, .template-acquisitions {
     >.row-2 {
         >.wrapper.cap {
             >.wrapper {
@@ -323,6 +263,109 @@ aside.top-bar {
                         width: 30%;
                         margin: 0;
                         float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+.template-brokerage, .template-acquisitions {
+    >.row-2 {
+        >.wrapper.cap {
+            margin: 0 auto 30px auto;
+            @media screen and (min-width: $tabwidth){
+                margin: 0 auto 2% auto;
+            }
+        }
+    }
+    >.row-3 {
+        >.wrapper.cap {
+            >.wrapper {
+                @media screen and (min-width: $tabwidth){
+                    width: 92%; 
+                    margin: 0 auto;
+                }
+                header {
+                    margin: 0 0 5px 0;
+                    @media screen and (min-width: $tabwidth){
+                        margin: 0 0 20px 0;
+                    }
+                    h2 {
+                        margin: 0;
+                        text-transform: uppercase;
+                        color: $color__waters-blue;
+                        font-size: 20px;
+                        padding: 0 0 5px 0;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 23px;
+                        }
+                    }
+                }
+                .projects {
+                    .project {
+                        margin: 0 0 20px 0;
+                        @media screen and (min-width: $tabwidth){
+                            float: left;
+                            width: calc(50% - 10px);
+                            margin: 0 10px 20px 10px;
+                        }
+                        @media screen and (min-width: $deskwidth){
+                            float: left;
+                            width: 1/4*92%;
+                            margin: 0 1% 2% 1%;
+                        }
+                        &:nth-child(even){
+                            @media screen and (min-width: $tabwidth){
+                                margin-right: 0;
+                            }
+                            @media screen and (min-width: $deskwidth){
+                                margin-right: 1%;
+                            }
+                        }
+                        &:nth-child(odd){
+                            @media screen and (min-width: $tabwidth){
+                                margin-left: 0;
+                            }
+                            @media screen and (min-width: $deskwidth){
+                                margin-left: 1%;
+                            }
+                        }
+                        &.first {
+                            @media screen and (min-width: $deskwidth){
+                                margin-left: 0;
+                            }
+                        }
+                        &.last {
+                            @media screen and (min-width: $deskwidth){
+                                margin-right: 0;
+                            }
+                        }
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            color: inherit;
+                            img {
+                                display: block;
+                                width: 100%;
+                            }
+                            header {
+                                padding: 10px;
+                                text-align: center;
+                                background-color: $color__waters-green;
+                                color: white;
+                                h3 {
+                                    margin: 0;
+                                    color: white;
+                                    font-size: 18px;
+                                }
+                                .location {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .colorbox-popup {
+                        display: none;
                     }
                 }
             }
@@ -416,6 +459,14 @@ aside.top-bar {
     }
 }
 .template-news {
+    >.row-2 {
+        >.wrapper.cap {
+            margin: 0 auto 30px auto;
+            @media screen and (min-width: $tabwidth){
+                margin: 0 auto 2% auto;
+            }
+        }
+    }
     >.row-3 {
         >.wrapper.cap {
             >.wrapper {
@@ -434,11 +485,11 @@ aside.top-bar {
                         >.post {
                             box-shadow: 0px 0px 10px grey;
                             padding: 20px;
-                            margin: 20px 0 0 0;
+                            margin: 0 0 20px 0;
                             @media screen and (min-width: $tabwidth){
-                                margin: 12% 0 0 0;
+                                margin: 0 0 12% 0;
                             }
-                            &:first-child {
+                            &:last-child {
                                 margin: 0;
                             }
                             header {
@@ -506,9 +557,9 @@ aside.top-bar {
 .template-staff {
     >.row-2 {
         >.wrapper.cap {
-            margin: 0 auto 10px auto;
+            margin: 0 auto 30px auto;
             @media screen and (min-width: $tabwidth){
-                margin: 0 auto 0 auto;
+                margin: 0 auto 2% auto;
             }
         }
     }
@@ -522,11 +573,11 @@ aside.top-bar {
                 >.member {
                     text-align: center;
                     box-shadow: 0px 0px 10px grey;
-                    margin: 20px 0 0 0;
+                    margin: 0 0 20px 0;
                     padding: 20px 40px 30px 40px;
                     @media screen and (min-width: $tabwidth){
                         width: 1/2*95%;
-                        margin: 5% 2.5% 0 2.5%;
+                        margin: 0 2.5% 5% 2.5%;
                         float: left;
                         @include flexbox();
                         @include flexbox-justify(flex-start);

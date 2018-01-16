@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php
 		while ( have_posts() ) : the_post();
-
+			get_sidebar('top-bar-staff');
 			get_template_part( 'template-parts/content', "staff-single" );
 
 		endwhile; // End of the loop.
