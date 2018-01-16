@@ -1540,10 +1540,12 @@ aside.top-bar>.wrapper.cap>.wrapper ul li a{text-decoration:none;color:#207963;f
 }.template-brokerage>.row-2>.wrapper.cap,.template-acquisitions>.row-2>.wrapper.cap{margin:0 auto 30px auto}
 @media screen and (min-width:600px){.template-brokerage>.row-2>.wrapper.cap,.template-acquisitions>.row-2>.wrapper.cap{margin:0 auto 2% auto}
 }@media screen and (min-width:600px){.template-brokerage>.row-3>.wrapper.cap>.wrapper,.template-acquisitions>.row-3>.wrapper.cap>.wrapper{width:92%;margin:0 auto}
-}.template-brokerage>.row-3>.wrapper.cap>.wrapper header,.template-acquisitions>.row-3>.wrapper.cap>.wrapper header{margin:0 0 5px 0}
-@media screen and (min-width:600px){.template-brokerage>.row-3>.wrapper.cap>.wrapper header,.template-acquisitions>.row-3>.wrapper.cap>.wrapper header{margin:0 0 20px 0}
-}.template-brokerage>.row-3>.wrapper.cap>.wrapper header h2,.template-acquisitions>.row-3>.wrapper.cap>.wrapper header h2{margin:0;text-transform:uppercase;color:#244a79;font-size:20px;padding:0 0 5px 0}
-@media screen and (min-width:600px){.template-brokerage>.row-3>.wrapper.cap>.wrapper header h2,.template-acquisitions>.row-3>.wrapper.cap>.wrapper header h2{font-size:23px}
+}.template-brokerage>.row-3>.wrapper.cap>.wrapper>header,.template-acquisitions>.row-3>.wrapper.cap>.wrapper>header{margin:30px 0 5px 0}
+@media screen and (min-width:600px){.template-brokerage>.row-3>.wrapper.cap>.wrapper>header,.template-acquisitions>.row-3>.wrapper.cap>.wrapper>header{margin:2% 0 20px 0}
+}.template-brokerage>.row-3>.wrapper.cap>.wrapper>header:first-child,.template-acquisitions>.row-3>.wrapper.cap>.wrapper>header:first-child{margin:0 0 5px 0}
+@media screen and (min-width:600px){.template-brokerage>.row-3>.wrapper.cap>.wrapper>header:first-child,.template-acquisitions>.row-3>.wrapper.cap>.wrapper>header:first-child{margin:0 0 20px 0}
+}.template-brokerage>.row-3>.wrapper.cap>.wrapper>header h2,.template-acquisitions>.row-3>.wrapper.cap>.wrapper>header h2{margin:0;text-transform:uppercase;color:#244a79;font-size:20px;padding:0 0 5px 0}
+@media screen and (min-width:600px){.template-brokerage>.row-3>.wrapper.cap>.wrapper>header h2,.template-acquisitions>.row-3>.wrapper.cap>.wrapper>header h2{font-size:23px}
 }.template-brokerage>.row-3>.wrapper.cap>.wrapper .projects .project,.template-acquisitions>.row-3>.wrapper.cap>.wrapper .projects .project{margin:0 0 20px 0}
 @media screen and (min-width:600px){.template-brokerage>.row-3>.wrapper.cap>.wrapper .projects .project,.template-acquisitions>.row-3>.wrapper.cap>.wrapper .projects .project{float:left;width:calc(50% - 10px);margin:0 10px 20px 10px}
 }@media screen and (min-width:1200px){.template-brokerage>.row-3>.wrapper.cap>.wrapper .projects .project,.template-acquisitions>.row-3>.wrapper.cap>.wrapper .projects .project{float:left;width:23%;margin:0 1% 2% 1%}

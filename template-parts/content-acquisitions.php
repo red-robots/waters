@@ -43,7 +43,7 @@
                 );
                 $query = new WP_Query($args);
                 if($query->have_posts()):?>
-                    <?php $term = get_term_by('term_taxonomy_id',10);
+                    <?php $term = get_term_by('term_taxonomy_id',11);
                     if($term):?>
                         <header>
                             <h2><?php echo $term->name;?></h2>
@@ -115,7 +115,7 @@
                 );
                 $query = new WP_Query($args);
                 if($query->have_posts()):?>
-                    <?php $term = get_term_by('term_taxonomy_id',10);
+                    <?php $term = get_term_by('term_taxonomy_id',12);
                     if($term):?>
                         <header>
                             <h2><?php echo $term->name;?></h2>
