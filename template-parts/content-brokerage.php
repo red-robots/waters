@@ -23,7 +23,7 @@
                 <div class="col-1 copy">
                     <?php the_content();?>
                 </div><!--.col-1-->
-                <?php get_sidebar("page");?>
+                <?php get_sidebar("projects");?>
             </div><!--.wrapper-->
         </div><!--.wrapper.cap-->
     </section><!--.row-2-->
