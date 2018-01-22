@@ -18,6 +18,7 @@
   .copy {
 	font-size: 16px;
 	color: $color__text-main;
+	font-family: $font__serif;
 	@media screen and (min-width: $tabwidth){
 	  font-size: 18px;
 	}
