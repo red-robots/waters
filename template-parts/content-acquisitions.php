@@ -132,7 +132,7 @@
                                 <div class="project js-blocks <?php if($i%4===0) echo "first";?> <?php if(($i-3)%4===0) echo "last";?>">
                                     <a class="popup" href="#<?php echo get_the_ID();?>">
                                         <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
-                                        <header>
+                                        <header class="js-blocks-title">
                                             <h3><?php the_title();?></h3>
                                             <?php if($location):?>
                                                 <div class"location"><?php echo $location;?></div><!--.location-->

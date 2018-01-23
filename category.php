@@ -17,7 +17,7 @@ get_header(); ?>
 				<header class="row-1">
 					<div class="wrapper cap">
 						<div class="wrapper">
-							<h1><?php the_archive_title();?></h1>
+							<h1><?php single_cat_title();?></h1>
 						</div><!--.wrapper-->
 					</div><!--.wrapper.cap-->
 				</header>
