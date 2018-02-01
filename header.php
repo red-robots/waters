@@ -30,11 +30,11 @@ if($ga) echo $ga;?>
 			<div class="wrapper cap">		
 				<?php if(is_home()): ?>
 					<h1 class="logo">
-						<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.jpg";?>" alt="<?php bloginfo('name'); ?>"></a>
+						<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
 					</h1>
 				<?php else: ?>
 					<div class="logo">
-						<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.jpg";?>" alt="<?php bloginfo('name'); ?>"></a>
+						<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
 					</div>
 				<?php endif; ?>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
