@@ -58,7 +58,7 @@
 				<?php if($af['image']):?>
 					<div class="affiliation">
 						<?php if($af['link']):?>
-							<a href="<?php echo $af['link'];?>">
+							<a href="<?php echo $af['link'];?>" target="_blank">
 						<?php endif;?>
 							<img src="<?php echo $af['image']['sizes']['medium'];?>" alt="<?php echo $af['image']['alt'];?>">
 						<?php if($af['link']):?>
