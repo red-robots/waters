@@ -72,7 +72,8 @@
                 <div class="listings">
                     <?php while($query->have_posts()){ $query->the_post();
                         $office = get_field("office");
-                        $anchor_tenants = get_field("anchor_tenants");?>
+                        $anchor_tenants = get_field("anchor_tenants");
+                        $image = get_field("image");?>
                         <div class="row clear-bottom">
                             <div class="col-1 copy">
                                 <?php if($office){
@@ -80,6 +81,9 @@
                                 }?>
                             </div><!--.col-1-->
                             <div class="col-2 copy">
+                                <?php if($image){ ?>
+                                    <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
+                                <?php } ?>
                                 <?php if($anchor_tenants){
                                     echo $anchor_tenants;
                                 }?>

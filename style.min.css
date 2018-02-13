@@ -1570,6 +1570,8 @@ aside.top-bar>.wrapper.cap>.wrapper ul li a{text-decoration:none;color:#1f7962;f
 @media screen and (min-width:600px){.template-listings>.row-2>.wrapper.cap>.wrapper>.listings>.row>.col-1{width:50%;margin:0;float:left;padding:0 5px 0 0}
 }.template-listings>.row-2>.wrapper.cap>.wrapper>.listings>.row>.col-2{margin:10px 0 0 0}
 @media screen and (min-width:600px){.template-listings>.row-2>.wrapper.cap>.wrapper>.listings>.row>.col-2{width:50%;margin:0;float:left;padding:0 0 0 5px}
+}.template-listings>.row-2>.wrapper.cap>.wrapper>.listings>.row>.col-2 img{width:100%;display:block}
+@media screen and (min-width:600px){.template-listings>.row-2>.wrapper.cap>.wrapper>.listings>.row>.col-2 img{width:50%;margin:0 0 0 20px;float:right}
 }.template-contact>.row-2>.wrapper.cap>.wrapper>.col-1{min-height:1px}
 @media screen and (min-width:600px){.template-contact>.row-2>.wrapper.cap>.wrapper>.col-1{width:60%;float:left;padding:0 8% 0 0}
 }.template-contact>.row-2>.wrapper.cap>.wrapper>aside.col-2.sidebar{min-height:1px;margin:20px 0 0 0}
