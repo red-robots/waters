@@ -148,6 +148,7 @@
 							@media screen and (min-width: $tabwidth){
 								margin: 0 20px;
 								display: inline-block;
+								line-height: 3;
 							}
 							&:last-child {
 								margin-right: 0;
@@ -173,27 +174,38 @@
 									position: absolute;
 									top: 100%;
 									left: 50%;
-									width: 200px;
+									width: 300px;
 									text-align: left;
 									background-color: white;
 									z-index: 3;
 									display: none;
-									padding: 10px;
-									border: 1px solid $color__waters-blue;
+									padding: 0;
+									border-left: 1px solid $color__waters-blue;
+									border-right: 1px solid $color__waters-blue;
+									border-top: 10px solid $color__waters-blue;
+									border-bottom: 1px solid $color__waters-blue;
 									@include translatexy(-50%,0);
 								}
 								>li {
-									margin: 10px 0 0 0;
+									margin: 0;
 									list-style-type: none;
+									line-height: 1.2;
 									&:first-child {	
 										@media screen and (min-width: $tabwidth){
 											margin-top: 0;
+											line-height: 1.2;
 										}
 									}	
 									>a {
 										font-size: 18px;
 										text-decoration: none;
 										color: $color__waters-blue;
+										display: block;
+										padding: 10px;
+										&:hover {
+											color: #fff;
+											background-color: $color__waters-blue;
+										}
 									}
 								}
 							}

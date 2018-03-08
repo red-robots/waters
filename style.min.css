@@ -551,7 +551,7 @@ to{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translat
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */@font-face{font-family:'FontAwesome';src:url("./fonts/font-awesome/fontawesome-webfont.eot?v=4.5.0");src:url("./fonts/font-awesome/fontawesome-webfont.eot?v=4.5.0#iefix") format("embedded-opentype"),url("./fonts/font-awesome/fontawesome-webfont.woff2?v=4.5.0") format("woff2"),url("./fonts/font-awesome/fontawesome-webfont.woff?v=4.5.0") format("woff"),url("./fonts/font-awesome/fontawesome-webfont.ttf?v=4.5.0") format("truetype"),url("./fonts/font-awesome/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal}
-.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fa{display:inline-block;font:normal normal normal 14px / 1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-15%}
 .fa-2x{font-size:2em}
 .fa-3x{font-size:3em}
@@ -1404,16 +1404,17 @@ html[xmlns] .flexslider .slides{display:block}
 }#masthead>.row-1>.wrapper.cap #site-navigation>div>ul{margin:0;padding:0}
 @media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div>ul{text-align:right}
 }#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li{margin:20px 0 0 0;list-style-type:none;position:relative}
-@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li{margin:0 20px;display:inline-block}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li{margin:0 20px;display:inline-block;line-height:3}
 }#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li:last-child{margin-right:0}
 #masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li:hover>ul.sub-menu{display:block}
 #masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>a{text-decoration:none;color:#1f497d;font-size:20px;text-transform:uppercase}
 #masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>a:hover{color:#1f7962}
 #masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu{margin:0;padding:0}
-@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu{position:absolute;top:100%;left:50%;width:200px;text-align:left;background-color:white;z-index:3;display:none;padding:10px;border:1px solid #1f497d;-ms-transform:translateX(-50%) translateY(0);-webkit-transform:translateX(-50%) translateY(0);transform:translateX(-50%) translateY(0)}
-}#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu>li{margin:10px 0 0 0;list-style-type:none}
-@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu>li:first-child{margin-top:0}
-}#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu>li>a{font-size:18px;text-decoration:none;color:#1f497d}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu{position:absolute;top:100%;left:50%;width:300px;text-align:left;background-color:white;z-index:3;display:none;padding:0;border-left:1px solid #1f497d;border-right:1px solid #1f497d;border-top:10px solid #1f497d;border-bottom:1px solid #1f497d;-ms-transform:translateX(-50%) translateY(0);-webkit-transform:translateX(-50%) translateY(0);transform:translateX(-50%) translateY(0)}
+}#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu>li{margin:0;list-style-type:none;line-height:1.2}
+@media screen and (min-width:600px){#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu>li:first-child{margin-top:0;line-height:1.2}
+}#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu>li>a{font-size:18px;text-decoration:none;color:#1f497d;display:block;padding:10px}
+#masthead>.row-1>.wrapper.cap #site-navigation>div>ul>li>ul.sub-menu>li>a:hover{color:#fff;background-color:#1f497d}
 #masthead>.row-2{background-size:cover;background-position:center;background-repeat:no-repeat;min-height:250px;padding:11% 0;position:relative}
 #masthead>.row-2.home{padding:21% 0}
 #colophon{padding:40px 0;background-color:#1f497d;color:white}
